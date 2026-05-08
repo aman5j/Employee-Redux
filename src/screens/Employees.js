@@ -11,7 +11,6 @@ export default function Employees()
     const [employeeImage,setEmployeeImage]=useState('')
     var dispatch = useDispatch()
     var navigate = useNavigate()
-    const [check,setCheck]=useState(false)
 
     const changeImage=(e)=>{
         setEmployeeImage(URL.createObjectURL(e.target.files[0]))
